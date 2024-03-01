@@ -50,7 +50,7 @@ export default function ContactForm({ onAdd }) {
             name="name"
             id={nameFieldId}
           />
-          <ErrorMessage className={css.error} name="name" as="span" />
+          <ErrorMessage className={css.error} name="name" component="span" />
         </div>
         <div className={css.wrap}>
           <label className={css.label} htmlFor={numberFieldId}>
@@ -62,7 +62,7 @@ export default function ContactForm({ onAdd }) {
             name="number"
             id={numberFieldId}
           />
-          <ErrorMessage className={css.error} name="number" as="span" />
+          <ErrorMessage className={css.error} name="number" component="span" />
         </div>
 
         <button className={css.button} type="submit">
