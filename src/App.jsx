@@ -27,7 +27,7 @@ export default function App() {
   };
 
   useEffect(() => {
-    localStorage.setItem("savedContacts", JSON.stringify(contacts));
+    localStorage.setItem("contacts", JSON.stringify(contacts));
   }, [contacts]);
 
   const visibleContacts = contacts.filter(({ name }) =>
